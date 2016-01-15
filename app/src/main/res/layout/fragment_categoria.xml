@@ -1,0 +1,70 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/background2">
+<LinearLayout
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/temple2"
+        android:layout_gravity="left"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton7"
+        android:src="@drawable/sushi_fusion"
+        android:background="#191919"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_gravity="center"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton8"
+        android:src="@drawable/hosomaki"
+        android:background="#191919"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_gravity="center"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton9"
+        android:src="@drawable/nigiri_sushi"
+        android:background="#191919"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_gravity="center"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton10"
+        android:src="@drawable/onigiri"
+        android:background="#191919"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_gravity="center"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton11"
+        android:src="@drawable/sashimi"
+        android:background="#191919"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_gravity="center"/>
+</LinearLayout>
+</FrameLayout>

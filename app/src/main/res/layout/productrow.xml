@@ -1,0 +1,100 @@
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000"
+    android:alpha="0.65"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="123dp"
+                android:orientation="vertical"
+                android:alpha="1"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+
+                    >
+                    <ImageButton
+                        android:layout_width="120dp"
+                        android:layout_height="123dp"
+
+                        android:id="@+id/foto"
+
+                        android:gravity="left"
+                        android:alpha="1"
+                        android:clickable="true" />
+                    <LinearLayout
+                        android:layout_width="520dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#FFF"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+
+                            android:id="@+id/name"
+                            android:textAlignment="center"
+                            android:textSize="22dp"
+                            android:textIsSelectable="false"
+                            android:alpha="1"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="54dp"
+                            android:textColor="#FFF"
+                            android:id="@+id/description"
+                            android:alpha="1"
+                            />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="45sp"
+                            android:text="Agregar"
+                            android:alpha="1"
+                            android:id="@+id/boton1"
+                            android:gravity="center"
+
+                            android:textAlignment="center"
+                            />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:textColor="#FFF"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+
+                        android:id="@+id/precio"
+                        android:textSize="20sp"
+                        android:gravity="right"
+                        android:alpha="1"
+                        android:numeric="integer" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/id"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </ScrollView>
+
+
+</FrameLayout>

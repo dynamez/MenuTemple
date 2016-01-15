@@ -1,0 +1,127 @@
+<FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#000"
+    android:alpha="0.65"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="123dp"
+            android:orientation="vertical"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+
+                >
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+
+                    android:id="@+id/foto_carrito"
+
+                    android:gravity="left"
+                    android:alpha="1"
+                    android:clickable="true" />
+                <LinearLayout
+                    android:layout_width="400dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFF"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+
+                        android:id="@+id/name_carrito"
+                        android:textAlignment="center"
+                        android:textSize="15dp"
+                        android:textIsSelectable="false"
+                        android:alpha="1"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:textColor="#FFF"
+                        android:id="@+id/description_carrito"
+                        android:alpha="1"
+                        />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40sp"
+                        android:text="Remover"
+
+                        android:id="@+id/boton_carrito"
+                        android:gravity="bottom"
+                        android:textAlignment="gravity"
+                        android:alpha="1"/>
+                </LinearLayout>
+
+
+
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="-"
+                    android:id="@+id/button"
+
+                    android:textColor="#FFF"/>
+
+                <EditText
+                    android:layout_width="35dp"
+                    android:layout_height="37dp"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:background="#FFFF"
+                    android:textColor="#000"
+                    android:id="@+id/editText4" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="+"
+                    android:textColor="#FFF"
+
+                    android:id="@+id/button2" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="#FFF"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+
+                    android:id="@+id/precio_carrito"
+                    android:textSize="16sp"
+                    android:gravity="right"
+                    android:alpha="1"
+                    android:numeric="integer" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/id_carrito"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</FrameLayout>
