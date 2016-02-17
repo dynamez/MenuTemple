@@ -1,0 +1,376 @@
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent" android:layout_height="wrap_content" >
+	<!-- 
+	/*
+	 *	This content is generated from the PSD File Info.
+	 *	(Alt+Shift+Ctrl+I).
+	 *
+	 *	@desc 		Normal
+	 *	@file 		sushibar
+	 *	@date 		sRGB
+	 *	@title 		
+	 *	@author 	
+	 *	@keywords 	
+	 *	@generator 	Export Kit v1.2.8
+	 *
+	 */
+	-->
+	<ScrollView android:id="@+id/sushibar" 
+		android:layout_width="wrap_content" 
+		android:layout_height="match_parent" >
+
+		<RelativeLayout android:id="@+id/content_container" 
+			android:layout_width="match_parent"
+			android:layout_height="match_parent" >
+
+
+
+
+				<RelativeLayout android:id="@+id/iconos_menu"
+					android:layout_marginTop="454dp"
+					android:layout_marginStart="0dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					>
+
+					<TextView android:id="@+id/nigiri_sushi"
+						android:fontFamily="Quicksand-Bold"
+						android:layout_gravity="center_horizontal|center"
+						android:gravity="center"
+						android:textSize="28sp"
+						android:textColor="@color/nigiri_sushi_color"
+						android:layout_marginStart="540dp"
+						android:layout_marginTop="230dp"
+						android:layout_width="228dp"
+						android:layout_height="55dp"
+						android:text="@string/nigiri_sushi_string"
+						 />
+
+					<TextView android:id="@+id/sashimi"
+						android:fontFamily="Quicksand-Bold"
+						android:layout_gravity="center_horizontal|center"
+						android:gravity="center"
+						android:textSize="28sp"
+						android:textColor="@color/nigiri_sushi_color"
+						android:layout_marginStart="405dp"
+						android:layout_marginTop="515dp"
+						android:layout_width="228dp"
+						android:layout_height="55dp"
+						android:text="@string/sashimi_string"
+						 />
+
+					<TextView android:id="@+id/onigiri"
+						android:fontFamily="Quicksand-Bold"
+						android:layout_gravity="center_horizontal|center"
+						android:gravity="center"
+						android:textSize="28sp"
+						android:textColor="@color/nigiri_sushi_color"
+						android:layout_marginStart="117dp"
+						android:layout_marginTop="515dp"
+						android:layout_width="270dp"
+						android:layout_height="55dp"
+						android:text="@string/onigiri_string"
+						 />
+
+					<TextView android:id="@+id/hosomaki"
+						android:fontFamily="Quicksand-Bold"
+						android:layout_gravity="center_horizontal|center"
+						android:gravity="center"
+						android:textSize="28sp"
+						android:textColor="@color/nigiri_sushi_color"
+						android:layout_marginStart="273dp"
+						android:layout_marginTop="230dp"
+						android:layout_width="228dp"
+						android:layout_height="55dp"
+						android:text="@string/hosomaki_string"
+						 />
+
+					<TextView android:id="@+id/sushi_fusion"
+						android:fontFamily="Quicksand-Bold"
+						android:layout_gravity="center_horizontal|center"
+						android:gravity="center"
+						android:textSize="28sp"
+						android:textColor="@color/nigiri_sushi_color"
+						android:layout_marginStart="0dp"
+						android:layout_marginTop="230dp"
+						android:layout_width="323dp"
+						android:layout_height="55dp"
+						android:text="@string/sushi_fusion_string"
+						 />
+
+
+					<RelativeLayout android:id="@+id/nigirisushi"
+						android:layout_marginTop="0dp"
+						android:layout_marginStart="521dp"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						>
+
+						<ImageView android:id="@+id/nigiri_circle"
+							android:src="@drawable/nigiri_circle"
+							android:contentDescription="@string/ek_img_content"
+							 android:layout_marginStart="0dp"
+							android:layout_marginTop="0dp"
+							android:layout_width="220dp"
+							android:layout_height="220dp" />
+
+						<ImageView android:id="@+id/imageButton9"
+							android:src="@drawable/nigirisushi"
+							android:contentDescription="@string/ek_img_content"
+							 android:layout_marginStart="0dp"
+							android:layout_marginTop="0dp"
+							android:layout_width="220dp"
+							android:layout_height="220dp"
+							android:paddingLeft="6px"
+							android:paddingTop="4px"
+							android:paddingRight="8px"
+							android:paddingBottom="9px"/>
+
+					</RelativeLayout>
+
+
+					<RelativeLayout android:id="@+id/sushifusion"
+						android:layout_marginTop="0dp"
+						android:layout_marginStart="34dp"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						>
+
+						<ImageView android:id="@+id/sushi_fusion_1"
+							android:src="@drawable/sushi_fusion_1"
+							android:contentDescription="@string/ek_img_content"
+							 android:layout_marginStart="0dp"
+							android:layout_marginTop="0dp"
+							android:layout_width="220dp"
+							android:layout_height="220dp" />
+
+						<ImageView android:id="@+id/imageButton7"
+							android:src="@drawable/sushifusion"
+							android:contentDescription="@string/ek_img_content"
+							 android:layout_marginStart="0dp"
+							android:layout_marginTop="0dp"
+							android:layout_width="220dp"
+							android:layout_height="220dp"
+							android:paddingLeft="6px"
+							android:paddingTop="4px"
+							android:paddingRight="8px"
+							android:paddingBottom="9px"/>
+
+					</RelativeLayout>
+
+
+					<RelativeLayout android:id="@+id/hosomaki_1"
+						android:layout_marginTop="0dp"
+						android:layout_marginStart="278dp"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						>
+
+						<ImageView android:id="@+id/hosomaki_circle"
+							android:src="@drawable/hosomaki_circle"
+							android:contentDescription="@string/ek_img_content"
+							 android:layout_marginStart="0dp"
+							android:layout_marginTop="0dp"
+							android:layout_width="220dp"
+							android:layout_height="220dp" />
+
+						<ImageView android:id="@+id/imageButton8"
+							android:src="@drawable/hosomaki"
+							android:contentDescription="@string/ek_img_content"
+							 android:layout_marginStart="0dp"
+							android:layout_marginTop="0dp"
+							android:layout_width="220dp"
+							android:layout_height="220dp"
+							android:paddingLeft="6px"
+							android:paddingTop="4px"
+							android:paddingRight="8px"
+							android:paddingBottom="9px"/>
+
+					</RelativeLayout>
+
+
+					<RelativeLayout android:id="@+id/sashimi_1"
+						android:layout_marginTop="287dp"
+						android:layout_marginStart="420dp"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						>
+
+						<ImageView android:id="@+id/sashimi_circle"
+							android:src="@drawable/sashimi_circle"
+							android:contentDescription="@string/ek_img_content"
+							 android:layout_marginStart="0dp"
+							android:layout_marginTop="0dp"
+							android:layout_width="220dp"
+							android:layout_height="220dp" />
+
+						<ImageView android:id="@+id/imageButton11"
+							android:src="@drawable/sashimi2"
+							android:contentDescription="@string/ek_img_content"
+							 android:layout_marginStart="0dp"
+							android:layout_marginTop="0dp"
+							android:layout_width="220dp"
+							android:layout_height="220dp"
+							android:paddingLeft="6px"
+							android:paddingTop="4px"
+							android:paddingRight="8px"
+							android:paddingBottom="9px"/>
+
+					</RelativeLayout>
+
+
+					<RelativeLayout android:id="@+id/onigiri_1"
+						android:layout_marginTop="287dp"
+						android:layout_marginStart="151dp"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						>
+
+						<ImageView android:id="@+id/onigiri_circle"
+							android:src="@drawable/onigiri_circle"
+							android:contentDescription="@string/ek_img_content"
+							 android:layout_marginStart="0dp"
+							android:layout_marginTop="0dp"
+							android:layout_width="220dp"
+							android:layout_height="220dp" />
+
+						<ImageView android:id="@+id/imageButton10"
+							android:src="@drawable/onigiris"
+							android:contentDescription="@string/ek_img_content"
+							 android:layout_marginStart="0dp"
+							android:layout_marginTop="0dp"
+							android:layout_width="220dp"
+							android:layout_height="220dp"
+							android:paddingLeft="6px"
+							android:paddingTop="4px"
+							android:paddingRight="8px"
+							android:paddingBottom="9px"/>
+
+					</RelativeLayout>
+
+				</RelativeLayout>
+
+
+
+
+
+			<RelativeLayout android:id="@+id/texto_bottom"
+				android:layout_marginTop="1020dp"
+				android:layout_marginStart="0dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				>
+
+				<TextView android:id="@+id/menu"
+					android:fontFamily="Quicksand-Bold"
+					android:layout_gravity="center_horizontal|center"
+					android:gravity="center"
+					android:textSize="58sp"
+					android:textColor="@color/nigiri_sushi_color"
+					android:layout_marginStart="270dp"
+					android:layout_marginTop="0dp"
+					android:layout_width="253dp"
+					android:layout_height="108dp"
+					android:text="@string/menu_string"
+					/>
+
+				<TextView android:id="@+id/piso_2_hotel_intercontinental"
+					android:fontFamily="Quicksand-Regular"
+					android:layout_gravity="center_horizontal|center"
+					android:gravity="center"
+					android:textColor="@color/nigiri_sushi_color"
+					android:layout_marginStart="140dp"
+					android:layout_marginTop="105dp"
+					android:layout_width="536dp"
+					android:layout_height="26dp"
+					android:text="@string/piso_2_hotel_intercontinental_string"
+					/>
+
+				<TextView android:id="@+id/santiago_de_chile"
+					android:fontFamily="Quicksand-Regular"
+					android:layout_gravity="center_horizontal|center"
+					android:gravity="center"
+					android:textColor="@color/nigiri_sushi_color"
+					android:layout_marginStart="140dp"
+					android:layout_marginTop="125dp"
+					android:layout_width="536dp"
+					android:layout_height="26dp"
+					android:text="@string/santiago_de_chile_string"
+					/>
+
+				<TextView android:id="@+id/av__vitacura_2885__las_condes_"
+					android:fontFamily="Quicksand-Regular"
+					android:layout_gravity="center_horizontal|center"
+					android:gravity="center"
+					android:textColor="@color/nigiri_sushi_color"
+					android:layout_marginStart="140dp"
+					android:layout_marginTop="85dp"
+					android:layout_width="536dp"
+					android:layout_height="26dp"
+					android:text="@string/av__vitacura_2885__las_condes__string"
+					/>
+
+			</RelativeLayout>
+
+
+				<RelativeLayout android:id="@+id/app_design"
+					android:layout_marginTop="0dp"
+					android:layout_marginStart="0dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					>
+
+					<ImageView android:id="@+id/top_banner"
+						android:src="@drawable/top_banner"
+						android:contentDescription="@string/ek_img_content"
+						 android:layout_marginStart="0dp"
+						android:layout_marginTop="0dp"
+						android:layout_width="800dp"
+						android:layout_height="280dp" />
+
+					<View android:id="@+id/menu_name_overlay_1"
+						android:background="@drawable/menu_name_overlay_1_shape"
+						 android:alpha="0.30196078431373"
+						 android:layout_marginStart="0dp"
+						android:layout_marginTop="691dp"
+						android:layout_width="800dp"
+						android:layout_height="40dp" />
+
+					<View android:id="@+id/menu_name_overlay_2"
+						android:background="@drawable/menu_name_overlay_2_shape"
+						 android:alpha="0.30196078431373"
+						 android:layout_marginStart="0dp"
+						android:layout_marginTop="977dp"
+						android:layout_width="800dp"
+						android:layout_height="40dp" />
+
+					<View android:id="@+id/rectangle_banner"
+						android:background="@drawable/rectangle_banner_shape"
+						 android:layout_marginStart="0dp"
+						android:layout_marginTop="280dp"
+						android:layout_width="801dp"
+						android:layout_height="12dp" />
+
+					<View android:id="@+id/logo"
+						android:background="@drawable/logo_shape"
+						 android:layout_marginStart="280dp"
+						android:layout_marginTop="155dp"
+						android:layout_width="239dp"
+						android:layout_height="250dp" />
+
+					<ImageView android:id="@+id/_group_"
+						android:src="@drawable/logo"
+						android:contentDescription="@string/ek_img_content"
+						 android:layout_marginStart="287dp"
+						android:layout_marginTop="151dp"
+						android:layout_width="239dp"
+						android:layout_height="250dp" />
+
+				</RelativeLayout>
+
+			</RelativeLayout>
+
+
+
+	</ScrollView>
+</HorizontalScrollView>

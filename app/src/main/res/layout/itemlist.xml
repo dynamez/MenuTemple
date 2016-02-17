@@ -1,0 +1,201 @@
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="wrap_content" >
+    <!--
+    /*
+     *	This content is generated from the PSD File Info.
+     *	(Alt+Shift+Ctrl+I).
+     *
+     *	@desc 		Normal
+     *	@file 		itemlist
+     *	@date 		sRGB
+     *	@title
+     *	@author
+     *	@keywords
+     *	@generator 	Export Kit v1.2.8
+     *
+     */
+    -->
+    <ScrollView android:id="@+id/itemlist"
+        android:layout_width="800dp"
+        android:layout_height="125dp" >
+
+        <RelativeLayout android:id="@+id/content_container"
+            android:layout_width="wrap_content"
+            android:layout_height="125dp" >
+
+
+            <RelativeLayout android:id="@+id/backgrounds"
+                android:layout_marginTop="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView android:id="@+id/color_fill_1"
+                    android:src="@drawable/color_fill_1"
+                    android:contentDescription="@string/ek_img_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="800dp"
+                    android:layout_height="125dp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout android:id="@+id/imagenproducto"
+                android:layout_marginTop="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <View android:id="@+id/rectangle_1"
+                    android:background="@drawable/rectangle_1_shape"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp" />
+
+                <ImageView android:id="@+id/foto"
+                    android:src="@drawable/elemento"
+                    android:contentDescription="@string/ek_img_content2"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout android:id="@+id/marcos"
+                android:layout_marginTop="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <View android:id="@+id/rectangle_3_copy"
+                    android:background="@drawable/rectangle_3_copy_shape"
+                    android:layout_marginStart="125dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="10dp"
+                    android:layout_height="125dp" />
+
+                <View android:id="@+id/rectangle_4"
+                    android:background="@drawable/rectangle_4_shape"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="123dp"
+                    android:layout_width="800dp"
+                    android:layout_height="2dp" />
+
+                <View android:id="@+id/rectangle_4_copy"
+                    android:background="@drawable/rectangle_4_copy_shape"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="800dp"
+                    android:layout_height="2dp" />
+
+                <View android:id="@+id/rectangle_3"
+                    android:background="@drawable/rectangle_3_shape"
+                    android:layout_marginStart="655dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="10dp"
+                    android:layout_height="125dp" />
+
+                <View android:id="@+id/rectangle_2"
+                    android:background="@drawable/rectangle_2_shape"
+                    android:layout_marginStart="135dp"
+                    android:layout_marginTop="31dp"
+                    android:layout_width="520dp"
+                    android:layout_height="10dp" />
+
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/boton"
+                android:layout_marginTop="76dp"
+                android:layout_marginStart="700dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="18dp"
+                    android:id="@+id/boton1"
+                    android:src="@drawable/boton2"/>
+                <!--<View android:id="@+id/rectangle_5"-->
+                    <!--android:background="@drawable/rectangle_5_shape"-->
+                    <!--android:layout_marginStart="0dp"-->
+                    <!--android:layout_marginTop="0dp"-->
+                    <!--android:layout_width="96dp"-->
+                    <!--android:layout_height="41dp" />-->
+
+                <!--<TextView android:id="@+id/agregar"-->
+                    <!--android:fontFamily="Quicksand-Bold"-->
+                    <!--android:layout_gravity="center_horizontal|center"-->
+                    <!--android:gravity="center"-->
+                    <!--android:textSize="14sp"-->
+                    <!--android:textColor="@color/agregar_color"-->
+                    <!--android:layout_marginStart="0dp"-->
+                    <!--android:layout_marginTop="12dp"-->
+                    <!--android:layout_width="793dp"-->
+                    <!--android:layout_height="121dp"-->
+                    <!--android:text="@string/agregar_string"-->
+                    <!--/>-->
+
+            </RelativeLayout>
+
+            <RelativeLayout android:id="@+id/textos"
+                android:layout_marginTop="9dp"
+                android:layout_marginStart="177dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView android:id="@+id/name"
+                    android:fontFamily="Quicksand-Bold"
+                    android:layout_gravity="center_horizontal|center"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textColor="@color/nombre_del_producto_color"
+                    android:layout_marginStart="86dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="220dp"
+                    android:layout_height="20dp"
+                    android:text="@string/nombre_del_producto_string"
+                    />
+
+                <TextView android:id="@+id/description"
+                    android:fontFamily="Quicksand-Bold"
+                    android:layout_gravity="center_horizontal|center"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/descripcion_color"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="42dp"
+                    android:layout_width="445dp"
+                    android:layout_height="73dp"
+                    android:text="@string/descripcion_string"
+                    />
+
+                <TextView android:id="@+id/precio"
+                    android:fontFamily="Roboto-Bold"
+                    android:layout_gravity="center_horizontal|center"
+                    android:gravity="center"
+                    android:textSize="22sp"
+                    android:textColor="@color/precio_color"
+                    android:layout_marginStart="505dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="92dp"
+                    android:layout_height="35dp"
+                    android:text="@string/precio_string"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/id"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</HorizontalScrollView>

@@ -1,0 +1,412 @@
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent" android:layout_height="wrap_content" >
+	<!-- 
+	/*
+	 *	This content is generated from the PSD File Info.
+	 *	(Alt+Shift+Ctrl+I).
+	 *
+	 *	@desc 		Normal
+	 *	@file 		bar
+	 *	@date 		sRGB
+	 *	@title 		
+	 *	@author 	
+	 *	@keywords 	
+	 *	@generator 	Export Kit v1.2.8
+	 *
+	 */
+	-->
+	<ScrollView android:id="@+id/bar" 
+		android:layout_width="wrap_content" 
+		android:layout_height="match_parent" >
+
+		<RelativeLayout android:id="@+id/content_container" 
+			android:layout_width="match_parent"
+			android:layout_height="match_parent" >
+
+
+
+
+
+				<RelativeLayout android:id="@+id/iconos_menu"
+					android:layout_marginTop="454dp"
+					android:layout_marginStart="20dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					>
+
+					<TextView android:id="@+id/aperitivos"
+						android:fontFamily="Quicksand-Bold"
+						android:layout_gravity="center_horizontal|center"
+						android:gravity="center"
+						android:textSize="28sp"
+						android:textColor="@color/aperitivos_color"
+						android:layout_marginStart="509dp"
+						android:layout_marginTop="237dp"
+						android:layout_width="228dp"
+						android:layout_height="55dp"
+						android:text="@string/aperitivos_string"
+						 />
+
+					<TextView android:id="@+id/cervezas"
+						android:fontFamily="Quicksand-Bold"
+						android:layout_gravity="center_horizontal|center"
+						android:gravity="center"
+						android:textSize="28sp"
+						android:textColor="@color/aperitivos_color"
+						android:layout_marginStart="270dp"
+						android:layout_marginTop="560dp"
+						android:layout_width="228dp"
+						android:layout_height="55dp"
+						android:text="@string/cervezas_string"
+						 />
+
+					<TextView android:id="@+id/destilados"
+						android:fontFamily="Quicksand-Bold"
+						android:layout_gravity="center_horizontal|center"
+						android:gravity="center"
+						android:textSize="28sp"
+						android:textColor="@color/aperitivos_color"
+						android:layout_marginStart="509dp"
+						android:layout_marginTop="560dp"
+						android:layout_width="228dp"
+						android:layout_height="55dp"
+						android:text="@string/destilados_string"
+						 />
+
+					<TextView android:id="@+id/cocktel"
+						android:fontFamily="Quicksand-Bold"
+						android:layout_gravity="center_horizontal|center"
+						android:gravity="center"
+						android:textSize="28sp"
+						android:textColor="@color/aperitivos_color"
+						android:layout_marginStart="0dp"
+						android:layout_marginTop="560dp"
+						android:layout_width="270dp"
+						android:layout_height="55dp"
+						android:text="@string/cocktel_string"
+						 />
+
+					<TextView android:id="@+id/vinos"
+						android:fontFamily="Quicksand-Bold"
+						android:layout_gravity="center_horizontal|center"
+						android:gravity="center"
+						android:textSize="28sp"
+						android:textColor="@color/aperitivos_color"
+						android:layout_marginStart="270dp"
+						android:layout_marginTop="237dp"
+						android:layout_width="228dp"
+						android:layout_height="55dp"
+						android:text="@string/vinos_string"
+						 />
+
+					<TextView android:id="@+id/jugos"
+						android:fontFamily="Quicksand-Bold"
+						android:layout_gravity="center_horizontal|center"
+						android:gravity="center"
+						android:textSize="28sp"
+						android:textColor="@color/aperitivos_color"
+						android:layout_marginStart="0dp"
+						android:layout_marginTop="225dp"
+						android:layout_width="303dp"
+						android:layout_height="80dp"
+						android:text="@string/jugos_string"
+						 />
+
+
+					<RelativeLayout android:id="@+id/aperitivos_1"
+						android:layout_marginTop="0dp"
+						android:layout_marginStart="518dp"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						>
+
+						<ImageView android:id="@+id/sushi_circle"
+							android:src="@drawable/sushi_circle"
+							android:contentDescription="@string/ek_img_content"
+							 android:layout_marginStart="0dp"
+							android:layout_marginTop="0dp"
+							android:layout_width="220dp"
+							android:layout_height="220dp" />
+
+						<ImageView android:id="@+id/imageButton20"
+							android:src="@drawable/aperitivos"
+							android:contentDescription="@string/ek_img_content"
+							 android:layout_marginStart="0dp"
+							android:layout_marginTop="0dp"
+							android:layout_width="220dp"
+							android:layout_height="220dp"
+							android:paddingLeft="6px"
+							android:paddingTop="4px"
+							android:paddingRight="8px"
+							android:paddingBottom="9px"/>
+
+					</RelativeLayout>
+
+
+					<RelativeLayout android:id="@+id/jugos_1"
+						android:layout_marginTop="0dp"
+						android:layout_marginStart="31dp"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						>
+
+						<ImageView android:id="@+id/appetizer_circle"
+							android:src="@drawable/appetizer_circle"
+							android:contentDescription="@string/ek_img_content"
+							 android:layout_marginStart="0dp"
+							android:layout_marginTop="0dp"
+							android:layout_width="220dp"
+							android:layout_height="220dp" />
+
+						<ImageView android:id="@+id/imageButton19"
+							android:src="@drawable/jugos"
+							android:contentDescription="@string/ek_img_content"
+							 android:layout_marginStart="0dp"
+							android:layout_marginTop="0dp"
+							android:layout_width="220dp"
+							android:layout_height="220dp"
+							android:paddingLeft="6px"
+							android:paddingTop="4px"
+							android:paddingRight="8px"
+							android:paddingBottom="9px"/>
+
+					</RelativeLayout>
+
+
+					<RelativeLayout android:id="@+id/vinos_1"
+						android:layout_marginTop="0dp"
+						android:layout_marginStart="275dp"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						>
+
+						<ImageView android:id="@+id/izakaya_circle"
+							android:src="@drawable/izakaya_circle"
+							android:contentDescription="@string/ek_img_content"
+							 android:layout_marginStart="0dp"
+							android:layout_marginTop="0dp"
+							android:layout_width="220dp"
+							android:layout_height="220dp" />
+
+						<ImageView android:id="@+id/imageButton22"
+							android:src="@drawable/vinos"
+							android:contentDescription="@string/ek_img_content"
+							 android:layout_marginStart="0dp"
+							android:layout_marginTop="0dp"
+							android:layout_width="220dp"
+							android:layout_height="220dp"
+							android:paddingLeft="6px"
+							android:paddingTop="4px"
+							android:paddingRight="8px"
+							android:paddingBottom="9px"/>
+
+					</RelativeLayout>
+
+
+					<RelativeLayout android:id="@+id/cerveza"
+						android:layout_marginTop="328dp"
+						android:layout_marginStart="281dp"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						>
+
+						<ImageView android:id="@+id/postre_circle"
+							android:src="@drawable/postre_circle"
+							android:contentDescription="@string/ek_img_content"
+							 android:layout_marginStart="0dp"
+							android:layout_marginTop="0dp"
+							android:layout_width="220dp"
+							android:layout_height="220dp" />
+
+						<ImageView android:id="@+id/imageButton21"
+							android:src="@drawable/cerveza"
+							android:contentDescription="@string/ek_img_content"
+							 android:layout_marginStart="0dp"
+							android:layout_marginTop="0dp"
+							android:layout_width="220dp"
+							android:layout_height="220dp"
+							android:paddingLeft="6px"
+							android:paddingTop="4px"
+							android:paddingRight="8px"
+							android:paddingBottom="9px"/>
+
+					</RelativeLayout>
+
+
+					<RelativeLayout android:id="@+id/destilados_1"
+						android:layout_marginTop="322dp"
+						android:layout_marginStart="521dp"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						>
+
+						<ImageView android:id="@+id/postre_circle_1"
+							android:src="@drawable/postre_circle"
+							android:contentDescription="@string/ek_img_content"
+							 android:layout_marginStart="0dp"
+							android:layout_marginTop="0dp"
+							android:layout_width="220dp"
+							android:layout_height="220dp" />
+
+						<ImageView android:id="@+id/imageButton24"
+							android:src="@drawable/destilados"
+							android:contentDescription="@string/ek_img_content"
+							 android:layout_marginStart="0dp"
+							android:layout_marginTop="0dp"
+							android:layout_width="220dp"
+							android:layout_height="220dp"
+							android:paddingLeft="6px"
+							android:paddingTop="4px"
+							android:paddingRight="8px"
+							android:paddingBottom="9px"/>
+
+					</RelativeLayout>
+
+
+					<RelativeLayout android:id="@+id/cocktel_1"
+						android:layout_marginTop="328dp"
+						android:layout_marginStart="32dp"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						>
+
+						<ImageView android:id="@+id/espec_circle"
+							android:src="@drawable/espec_circle"
+							android:contentDescription="@string/ek_img_content"
+							 android:layout_marginStart="0dp"
+							android:layout_marginTop="0dp"
+							android:layout_width="220dp"
+							android:layout_height="220dp" />
+
+						<ImageView android:id="@+id/imageButton23"
+							android:src="@drawable/cocktel"
+							android:contentDescription="@string/ek_img_content"
+							 android:layout_marginStart="0dp"
+							android:layout_marginTop="0dp"
+							android:layout_width="220dp"
+							android:layout_height="220dp" />
+
+					</RelativeLayout>
+
+				</RelativeLayout>
+
+
+			<RelativeLayout android:id="@+id/texto_bottom"
+				android:layout_marginTop="1090dp"
+				android:layout_marginStart="0dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				>
+
+				<TextView android:id="@+id/menu"
+					android:fontFamily="Quicksand-Bold"
+					android:layout_gravity="center_horizontal|center"
+					android:gravity="center"
+					android:textSize="58sp"
+					android:textColor="@color/aperitivos_color"
+					android:layout_marginStart="270dp"
+					android:layout_marginTop="0dp"
+					android:layout_width="253dp"
+					android:layout_height="108dp"
+					android:text="@string/menu_string"
+					/>
+
+				<TextView android:id="@+id/piso_2_hotel_intercontinental"
+					android:fontFamily="Quicksand-Regular"
+					android:layout_gravity="center_horizontal|center"
+					android:gravity="center"
+					android:textColor="@color/aperitivos_color"
+					android:layout_marginStart="140dp"
+					android:layout_marginTop="105dp"
+					android:layout_width="536dp"
+					android:layout_height="26dp"
+					android:text="@string/piso_2_hotel_intercontinental_string"
+					/>
+
+				<TextView android:id="@+id/santiago_de_chile"
+					android:fontFamily="Quicksand-Regular"
+					android:layout_gravity="center_horizontal|center"
+					android:gravity="center"
+					android:textColor="@color/aperitivos_color"
+					android:layout_marginStart="140dp"
+					android:layout_marginTop="125dp"
+					android:layout_width="536dp"
+					android:layout_height="26dp"
+					android:text="@string/santiago_de_chile_string"
+					/>
+
+				<TextView android:id="@+id/av__vitacura_2885__las_condes_"
+					android:fontFamily="Quicksand-Regular"
+					android:layout_gravity="center_horizontal|center"
+					android:gravity="center"
+					android:textColor="@color/aperitivos_color"
+					android:layout_marginStart="140dp"
+					android:layout_marginTop="85dp"
+					android:layout_width="536dp"
+					android:layout_height="26dp"
+					android:text="@string/av__vitacura_2885__las_condes__string"
+					/>
+
+			</RelativeLayout>
+
+				<RelativeLayout android:id="@+id/app_design"
+					android:layout_marginTop="0dp"
+					android:layout_marginStart="0dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					>
+
+					<ImageView android:id="@+id/top_banner"
+						android:src="@drawable/top_banner"
+						android:contentDescription="@string/ek_img_content"
+						 android:layout_marginStart="0dp"
+						android:layout_marginTop="0dp"
+						android:layout_width="800dp"
+						android:layout_height="280dp" />
+
+					<View android:id="@+id/menu_name_overlay_1"
+						android:background="@drawable/menu_name_overlay_1_shape"
+						 android:alpha="0.30196078431373"
+						 android:layout_marginStart="1dp"
+						android:layout_marginTop="680dp"
+						android:layout_width="800dp"
+						android:layout_height="69dp" />
+
+					<View android:id="@+id/menu_name_overlay_2"
+						android:background="@drawable/menu_name_overlay_2_shape"
+						 android:alpha="0.30196078431373"
+						 android:layout_marginStart="1dp"
+						android:layout_marginTop="1022dp"
+						android:layout_width="800dp"
+						android:layout_height="40dp" />
+
+					<View android:id="@+id/rectangle_banner"
+						android:background="@drawable/rectangle_banner_shape"
+						 android:layout_marginStart="0dp"
+						android:layout_marginTop="280dp"
+						android:layout_width="801dp"
+						android:layout_height="12dp" />
+
+					<View android:id="@+id/logo"
+						android:background="@drawable/logo_shape"
+						 android:layout_marginStart="280dp"
+						android:layout_marginTop="155dp"
+						android:layout_width="239dp"
+						android:layout_height="250dp" />
+
+					<ImageView android:id="@+id/_group_"
+						android:src="@drawable/logo"
+						android:contentDescription="@string/ek_img_content"
+						 android:layout_marginStart="287dp"
+						android:layout_marginTop="151dp"
+						android:layout_width="239dp"
+						android:layout_height="250dp" />
+
+				</RelativeLayout>
+
+			</RelativeLayout>
+
+
+
+	</ScrollView>
+</HorizontalScrollView>
