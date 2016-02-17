@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:weightSum="1"
     android:orientation="vertical"
-    android:background="@drawable/background2"
+    android:background="@drawable/background"
+
     tools:showIn="@layout/activity_main"
     tools:context=".MainActivityFragment"
     >
@@ -13,7 +15,8 @@
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:id="@+id/imageView"
-        android:src="@drawable/titulo"/>
+        android:src="@drawable/titulo"
+        android:visibility="invisible" />
 
     <LinearLayout
         android:orientation="horizontal"
@@ -110,7 +113,8 @@
         android:id="@+id/imageView6"
         android:src="@drawable/banner_menu_bot"
         android:layout_gravity="center"
-        android:paddingTop="100dp"/>
+        android:paddingTop="100dp"
+        android:visibility="invisible" />
 
     <!--<VideoView
         android:layout_width="550dp"

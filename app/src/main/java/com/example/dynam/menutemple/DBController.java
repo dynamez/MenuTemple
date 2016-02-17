@@ -1,13 +1,13 @@
 package com.example.dynam.menutemple;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+
+import java.util.ArrayList;
+import java.util.HashMap;
 
 public class DBController  extends SQLiteOpenHelper {
 
@@ -41,6 +41,7 @@ public class DBController  extends SQLiteOpenHelper {
 		values.put("userName", queryValues.get("userName"));
 		database.insert("users", null, values);
 		database.close();
+
 	}
 	
 	/**

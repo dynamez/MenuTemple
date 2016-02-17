@@ -57,15 +57,11 @@
                         android:alpha="1"
                         />
 
-                    <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="40sp"
-                        android:text="Remover"
-
+                    <ImageView
+                        android:layout_width="94dp"
+                        android:layout_height="39dp"
                         android:id="@+id/boton_carrito"
-                        android:gravity="bottom"
-                        android:textAlignment="gravity"
-                        android:alpha="1"/>
+                        android:src="@drawable/boton" />
                 </LinearLayout>
 
 

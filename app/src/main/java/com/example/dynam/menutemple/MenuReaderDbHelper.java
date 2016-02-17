@@ -4,24 +4,18 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MotionEvent;
 
-import java.sql.SQLDataException;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
 
 /**
  * Created by Tsunderella on 14-12-2015.
  */
 public class MenuReaderDbHelper extends SQLiteOpenHelper {
 
-    public static final String DATABASE_NAME = "MenuDB";
+    public static final String DATABASE_NAME = "menudb";
     public static final int DATABASE_VERSION = 1;
     private static final String TABLE_MENU = "menu";
     private static final String KEY_ID="id";
@@ -61,7 +55,7 @@ public class MenuReaderDbHelper extends SQLiteOpenHelper {
             String myPath = DBpath + DATABASE_NAME;
             db=SQLiteDatabase.openDatabase(myPath, null, SQLiteDatabase.OPEN_READWRITE);
             String CREATE_MENU_TABLE = "CREATE TABLE IF NOT EXISTS menu ( " +
-                    "id INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                    "id INTEGER, " +
                     "name VARCHAR, "+
                     "description VARCHAR, "+
                     "description2 VARCHAR, "+
@@ -70,43 +64,44 @@ public class MenuReaderDbHelper extends SQLiteOpenHelper {
                     "foto2 VARCHAR);";
             // create books table
             db.execSQL(CREATE_MENU_TABLE);
-            db.execSQL("INSERT INTO " + TABLE_MENU + "(name,description,description2,price,category,foto2)"+
-                    " Values ('Maguro Tataki','Pétalos de atún sellados en costra de sal, cebollín, jengibre y ponzu','Pétalos de atún sellados en costra de sal, cebollín, jengibre y ponzu'" +
-                    ",'8200','appetizer_frio','magurot');");
-            db.execSQL("INSERT INTO " + TABLE_MENU + "(name,description,description2,price,category,foto2)"+
-                    " Values ('Usuzukuri','Finas láminas de pescado blanco acompañada de cebollín y salsa ponzu','Finas láminas de pescado blanco acompañada de cebollín y salsa ponzu'" +
-                    ",'7600','appetizer_frio','usuzukuri');");
-            db.execSQL("INSERT INTO " + TABLE_MENU + "(name,description,description2,price,category,foto2)"+
-                    " Values ('Sake Carpaccio','Carpaccio de salmón y palta aliñado con jengibre, cebollín, alcaparra y dressing fusión','Carpaccio de salmón y palta aliñado con jengibre, cebollín, alcaparra y dressing fusión'" +
-                    ",'8000','appetizer_frio','sakeCarp');");
-            db.execSQL("INSERT INTO " + TABLE_MENU + "(name,description,description2,price,category,foto2)"+
-                    " Values ('Shiromi Style','Pétalos de pescado blanco bañados en salsa ponzu estilo temple','Pétalos de pescado blanco bañados en salsa ponzu estilo temple'" +
-                    ",'6800','appetizer_frio','shiromiS');");
-            db.execSQL("INSERT INTO " + TABLE_MENU + "(name,description,description2,price,category,foto2)"+
-                    " Values ('Sakana Tataki','Frescos trozos de pescado del día macerados en salsa sésamo','Frescos trozos de pescado del día macerados en salsa sésamo'" +
-                    ",'7200','appetizer_frio','SakanaTataki');");
-            db.execSQL("INSERT INTO " + TABLE_MENU + "(name,description,description2,price,category,foto2)"+
-                    " Values ('Gyu Tataki','Láminas de filete selladas en costras de sal, cebollín. jengobre, nabo y salsa ponzu','Láminas de filete selladas en costras de sal, cebollín. jengobre, nabo y salsa ponzu'" +
-                    ",'9200','appetizer_frio','gyutataki');");
-            db.execSQL("INSERT INTO " + TABLE_MENU + "(name,description,description2,price,category,foto2)"+
-                    " Values ('Tataki Maguro','Cubos de atún sellados, sobre cama de vegetales al wok, reducción de aceto, soja, texturas de cítricos','Cubos de atún sellados, sobre cama de vegetales al wok, reducción de aceto, soja, texturas de cítricos'" +
-                    ",'9200','appetizer_frio','tatakimaguro');");
+//            db.execSQL("INSERT INTO " + TABLE_MENU + "(name,description,description2,price,category,foto2)"+
+//                    " Values ('Maguro Tataki','Pétalos de atún sellados en costra de sal, cebollín, jengibre y ponzu','Pétalos de atún sellados en costra de sal, cebollín, jengibre y ponzu'" +
+//                    ",'8200','appetizer_frio','magurot');");
+//            db.execSQL("INSERT INTO " + TABLE_MENU + "(name,description,description2,price,category,foto2)"+
+//                    " Values ('Usuzukuri','Finas láminas de pescado blanco acompañada de cebollín y salsa ponzu','Finas láminas de pescado blanco acompañada de cebollín y salsa ponzu'" +
+//                    ",'7600','appetizer_frio','usuzukuri');");
+//            db.execSQL("INSERT INTO " + TABLE_MENU + "(name,description,description2,price,category,foto2)"+
+//                    " Values ('Sake Carpaccio','Carpaccio de salmón y palta aliñado con jengibre, cebollín, alcaparra y dressing fusión','Carpaccio de salmón y palta aliñado con jengibre, cebollín, alcaparra y dressing fusión'" +
+//                    ",'8000','appetizer_frio','sakeCarp');");
+//            db.execSQL("INSERT INTO " + TABLE_MENU + "(name,description,description2,price,category,foto2)"+
+//                    " Values ('Shiromi Style','Pétalos de pescado blanco bañados en salsa ponzu estilo temple','Pétalos de pescado blanco bañados en salsa ponzu estilo temple'" +
+//                    ",'6800','appetizer_frio','shiromiS');");
+//            db.execSQL("INSERT INTO " + TABLE_MENU + "(name,description,description2,price,category,foto2)"+
+//                    " Values ('Sakana Tataki','Frescos trozos de pescado del día macerados en salsa sésamo','Frescos trozos de pescado del día macerados en salsa sésamo'" +
+//                    ",'7200','appetizer_frio','SakanaTataki');");
+//            db.execSQL("INSERT INTO " + TABLE_MENU + "(name,description,description2,price,category,foto2)"+
+//                    " Values ('Gyu Tataki','Láminas de filete selladas en costras de sal, cebollín. jengobre, nabo y salsa ponzu','Láminas de filete selladas en costras de sal, cebollín. jengobre, nabo y salsa ponzu'" +
+//                    ",'9200','appetizer_frio','gyutataki');");
+//            db.execSQL("INSERT INTO " + TABLE_MENU + "(name,description,description2,price,category,foto2)"+
+//                    " Values ('Tataki Maguro','Cubos de atún sellados, sobre cama de vegetales al wok, reducción de aceto, soja, texturas de cítricos','Cubos de atún sellados, sobre cama de vegetales al wok, reducción de aceto, soja, texturas de cítricos'" +
+//                    ",'9200','appetizer_frio','tatakimaguro');");
         //}
 
     }
-    private boolean checkDbExist(){
-        SQLiteDatabase checkDB = null;
-        try{
-            String myPath = DBpath + DATABASE_NAME;
-            checkDB = SQLiteDatabase.openDatabase(myPath, null, SQLiteDatabase.OPEN_READONLY);
-        }catch(SQLiteException e){
 
-        }
-        if(checkDB != null){
-            checkDB.close();
-        }
-        return checkDB != null ? true : false;
-    }
+    //    private boolean checkDbExist(){
+//        SQLiteDatabase checkDB = null;
+//        try{
+//            String myPath = DBpath + DATABASE_NAME;
+//            checkDB = SQLiteDatabase.openDatabase(myPath, null, SQLiteDatabase.OPEN_READONLY);
+//        }catch(SQLiteException e){
+//
+//        }
+//        if(checkDB != null){
+//            checkDB.close();
+//        }
+//        return checkDB != null ? true : false;
+//    }
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         // Drop older books table if existed
@@ -118,6 +113,7 @@ public class MenuReaderDbHelper extends SQLiteOpenHelper {
         // create fresh books table
         this.onCreate(db);
     }
+
     public void addProducto(MenuTemple menu){
         //for logging
         Log.d("addProducto", menu.toString());
@@ -147,17 +143,20 @@ public class MenuReaderDbHelper extends SQLiteOpenHelper {
         ContentValues values = new ContentValues();
         values.put("id", queryValues.get("id"));
         values.put("name", queryValues.get("name"));
+        System.out.println(queryValues.get("name") + " HEHEHE");
         values.put("description", queryValues.get("description"));
         values.put("description2", queryValues.get("description2"));
         values.put("price", queryValues.get("price"));
+        values.put("category", queryValues.get("category"));
         values.put("foto2", queryValues.get("foto2"));
-        database.insert("menu", null, values);
+        database.insert(TABLE_MENU, null, values);
+
         database.close();
     }
 
     /**
      * Saca lista de productos por categorya a un arraylist
-     * @return
+     * return
      */
     public ArrayList<HashMap<String, String>> getAllUsers(String categoria) {
         ArrayList<HashMap<String, String>> usersList;
@@ -227,17 +226,22 @@ public class MenuReaderDbHelper extends SQLiteOpenHelper {
         // 3. go over each row, build book and add it to list
         MenuTemple menu = null;
         if (cursor.moveToFirst()) {
+            System.out.println("si");
+            System.out.println(cursor.getInt(0));
             do {
                 menu = new MenuTemple();
-                menu.setId(Integer.parseInt(cursor.getString(0)));
+                menu.setId((cursor.getInt(0)));
+                System.out.println(cursor.getInt(0));
                 menu.setName(cursor.getString(1));
                 menu.setDescription(cursor.getString(2));
                 menu.setDescription2(cursor.getString(3));
                 menu.setPrice(cursor.getDouble(4));
 
                 menu.setCategory(cursor.getString(5));
+
                 menu.setFoto2(cursor.getString(6));
-                System.out.println(cursor.getString(0));
+                System.out.println(cursor.getString(1));
+                System.out.println(cursor.getString(5));
                 // Add book to books
                 menus.add(menu);
             } while (cursor.moveToNext());

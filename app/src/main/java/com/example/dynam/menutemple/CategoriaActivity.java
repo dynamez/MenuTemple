@@ -2,9 +2,8 @@ package com.example.dynam.menutemple;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.Layout;
 import android.view.View;
-import android.widget.ImageButton;
+import android.widget.ImageView;
 
 
 public class CategoriaActivity extends BaseActivity {
@@ -15,17 +14,17 @@ public class CategoriaActivity extends BaseActivity {
 
         Bundle parameters = getIntent().getExtras();
         super.onCreate(savedInstanceState);
-        setContentView(parameters.getInt("imagen"));
-        id=parameters.getInt("imagen");
+        setContentView(parameters.getInt("categoria"));
+        id = parameters.getInt("categoria");
         System.out.println(id);
         //SUSHIBAR=parameters.getInt(R.id.c);
         if(id==R.layout.content_categoria) {
             System.out.println(id);
-            ImageButton btn7 = (ImageButton) findViewById(R.id.imageButton7);
-            ImageButton btn8 = (ImageButton) findViewById(R.id.imageButton8);
-            ImageButton btn9 = (ImageButton) findViewById(R.id.imageButton9);
-            ImageButton btn10 = (ImageButton) findViewById(R.id.imageButton10);
-            ImageButton btn11 = (ImageButton) findViewById(R.id.imageButton11);
+            ImageView btn7 = (ImageView) findViewById(R.id.imageButton7);
+            ImageView btn8 = (ImageView) findViewById(R.id.imageButton8);
+            ImageView btn9 = (ImageView) findViewById(R.id.imageButton9);
+            ImageView btn10 = (ImageView) findViewById(R.id.imageButton10);
+            ImageView btn11 = (ImageView) findViewById(R.id.imageButton11);
 
             btn7.setOnClickListener(onClickListener);
             btn8.setOnClickListener(onClickListener);
@@ -34,18 +33,18 @@ public class CategoriaActivity extends BaseActivity {
             btn11.setOnClickListener(onClickListener);
         }
         if(id==R.layout.content_appetizer){
-            ImageButton btn12 = (ImageButton) findViewById(R.id.imageButton12);
-            ImageButton btn13 = (ImageButton) findViewById(R.id.imageButton13);
+            ImageView btn12 = (ImageView) findViewById(R.id.imageButton12);
+            ImageView btn13 = (ImageView) findViewById(R.id.imageButton13);
 
             btn12.setOnClickListener(onClickListener);
             btn13.setOnClickListener(onClickListener);
         }
         if(id==R.layout.content_especialidades){
-            ImageButton btn14 = (ImageButton) findViewById(R.id.imageButton14);
-            ImageButton btn15 = (ImageButton) findViewById(R.id.imageButton15);
-            ImageButton btn16 = (ImageButton) findViewById(R.id.imageButton16);
-            ImageButton btn17 = (ImageButton) findViewById(R.id.imageButton17);
-            ImageButton btn18 = (ImageButton) findViewById(R.id.imageButton18);
+            ImageView btn14 = (ImageView) findViewById(R.id.imageButton14);
+            ImageView btn15 = (ImageView) findViewById(R.id.imageButton15);
+            ImageView btn16 = (ImageView) findViewById(R.id.imageButton16);
+            ImageView btn17 = (ImageView) findViewById(R.id.imageButton17);
+            ImageView btn18 = (ImageView) findViewById(R.id.imageButton18);
 
             btn14.setOnClickListener(onClickListener);
             btn15.setOnClickListener(onClickListener);
@@ -55,12 +54,12 @@ public class CategoriaActivity extends BaseActivity {
 
         }
         if(id==R.layout.content_bar){
-            ImageButton btn19 = (ImageButton) findViewById(R.id.imageButton19);
-            ImageButton btn20 = (ImageButton) findViewById(R.id.imageButton20);
-            ImageButton btn21 = (ImageButton) findViewById(R.id.imageButton21);
-            ImageButton btn22 = (ImageButton) findViewById(R.id.imageButton22);
-            ImageButton btn23 = (ImageButton) findViewById(R.id.imageButton23);
-            ImageButton btn24 = (ImageButton) findViewById(R.id.imageButton24);
+            ImageView btn19 = (ImageView) findViewById(R.id.imageButton19);
+            ImageView btn20 = (ImageView) findViewById(R.id.imageButton20);
+            ImageView btn21 = (ImageView) findViewById(R.id.imageButton21);
+            ImageView btn22 = (ImageView) findViewById(R.id.imageButton22);
+            ImageView btn23 = (ImageView) findViewById(R.id.imageButton23);
+            ImageView btn24 = (ImageView) findViewById(R.id.imageButton24);
 
             btn19.setOnClickListener(onClickListener);
             btn20.setOnClickListener(onClickListener);

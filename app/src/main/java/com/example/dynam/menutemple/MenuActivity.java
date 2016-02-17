@@ -1,36 +1,28 @@
 package com.example.dynam.menutemple;
 
 
-import android.content.Intent;
-
 import android.content.res.Resources;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.view.Gravity;
-import android.view.View;
-import android.widget.AbsListView;
-import android.widget.AdapterView;
-import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.PopupWindow;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.List;
 
 
 public class MenuActivity extends BaseActivity {
-
-    public ArrayList<MenuTemple> customlist = new ArrayList<MenuTemple>();
+    public Integer id;
+    public String categoria;
+    public ArrayList<MenuTemple> customlist = new ArrayList<>();
 
     CustomAdapter adapter;
     private ListView list;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // Bundle parameters = getIntent().getExtras();
         super.onCreate(savedInstanceState);
+        //setContentView(parameters.getInt("imagen"));
+        //categoria=parameters.getString("categoria");
+        //id=parameters.getInt("categoria");
+        //System.out.println(categoria);
         setContentView(R.layout.activity_menu);
         MyApp appclass=(MyApp) getApplication();
 

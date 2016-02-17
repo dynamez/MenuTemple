@@ -1,20 +1,15 @@
 package com.example.dynam.menutemple;
 
-import android.app.Activity;
-import android.app.FragmentTransaction;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.support.v7.app.AppCompatActivity;
-import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 
-/**
- * Created by dynam on 28-10-2015.
- */
+
 public class BaseActivity extends AppCompatActivity {
 
 
@@ -57,10 +52,6 @@ public class BaseActivity extends AppCompatActivity {
 
         // Example: If you have a TextView inside `popup_layout.xml`
         TextView tv = (TextView) popupView.findViewById(R.id.description);
-
-        //tv.setText("hola");
-
-        // Initialize more widgets from `popup_layout.xml`
 
 
         // If the PopupWindow should be focusable

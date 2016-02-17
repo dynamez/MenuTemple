@@ -6,16 +6,13 @@ package com.example.dynam.menutemple;
 
 import android.app.Activity;
 import android.content.Context;
-import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import android.widget.AbsListView;
 import android.widget.BaseAdapter;
 import android.widget.Button;
@@ -85,9 +82,10 @@ public class CustomAdapter extends BaseAdapter {
         public TextView item_text2;
         public TextView textWide;
         public TextView id;
-        public ImageButton image;
+        public ImageView image;
         public String draw;
-        Button bt1;
+        Button bt2;
+        ImageView bt1;
 
     }
 
@@ -103,7 +101,7 @@ public class CustomAdapter extends BaseAdapter {
 
             /****** Inflate tabitem.xml file for each row ( Defined below ) *******/
             if(bandera ==1) {
-                vi = inflater.inflate(R.layout.productrow, null);
+                vi = inflater.inflate(R.layout.itemlist, null);
 
                 /****** View Holder Object to contain tabitem.xml file elements ******/
 
@@ -113,11 +111,11 @@ public class CustomAdapter extends BaseAdapter {
                 holder.item_text2 = (TextView) vi.findViewById(R.id.description);
                 // holder.item_text3 = (TextView) vi.findViewById(R.id.description2);
                 holder.item_text4 = (TextView) vi.findViewById(R.id.precio);
-                holder.image = (ImageButton) vi.findViewById(R.id.foto);
+                holder.image = (ImageView) vi.findViewById(R.id.foto);
                 //holder.image.setImageResource();
-                holder.bt1 = (Button) vi.findViewById(R.id.boton1);
-                holder.bt1.setTag(new Integer(position));
-                holder.image.setTag(new Integer(position));
+                holder.bt1 = (ImageView) vi.findViewById(R.id.boton1);
+                holder.bt1.setTag((position));
+                holder.image.setTag((position));
             }else{
                 /****** Inflate tabitem.xml file for each row ( Defined below ) *******/
                 vi = inflater.inflate(R.layout.carrito_row, null);
@@ -132,9 +130,9 @@ public class CustomAdapter extends BaseAdapter {
                 holder.item_text4 = (TextView) vi.findViewById(R.id.precio_carrito);
                 holder.image = (ImageButton) vi.findViewById(R.id.foto_carrito);
                 //holder.image.setImageResource();
-                holder.bt1 = (Button) vi.findViewById(R.id.boton_carrito);
-                holder.bt1.setTag(new Integer(position));
-                holder.image.setTag(new Integer(position));
+                holder.bt1 = (ImageView) vi.findViewById(R.id.boton_carrito);
+                holder.bt1.setTag((position));
+                holder.image.setTag((position));
             }
 
             //holder.image=(ImageView)vi.findViewById(R.id.item_imagen);
@@ -182,10 +180,10 @@ public class CustomAdapter extends BaseAdapter {
                     double num = tempValues.getPrice();
                     NumberFormat defaultFormat = NumberFormat.getCurrencyInstance();
                     defaultFormat.setMaximumFractionDigits(0);
-                    holder.item_text4.setText( defaultFormat.format(num).toString());
+                holder.item_text4.setText(defaultFormat.format(num));
                      holder.image.setImageResource(
                           res.getIdentifier(
-                                  "com.example.dynam.menutemple:drawable/temple3"// + tempValues.getFoto2()
+                                  "com.example.dynam.menutemple:drawable/elemento"// + tempValues.getFoto2()
                                   , null, null));
                     holder.draw=tempValues.getFoto2();
 
@@ -256,7 +254,7 @@ public class CustomAdapter extends BaseAdapter {
 
         MyApp app = (MyApp)activity.getApplication();
         MenuReaderDbHelper dbHelper = new MenuReaderDbHelper(app.getApplicationContext());
-        ArrayList<MenuTemple> temple = new ArrayList<MenuTemple>();
+        ArrayList<MenuTemple> temple = new ArrayList<>();
         String idValue = holder.id.getText().toString();
         System.out.println(idValue + "wii");
         temple=dbHelper.getMenubyID(Integer.parseInt(idValue));

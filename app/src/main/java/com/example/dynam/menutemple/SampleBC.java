@@ -1,8 +1,7 @@
 package com.example.dynam.menutemple;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
+import android.app.AlarmManager;
+import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -12,6 +11,9 @@ import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 public class SampleBC extends BroadcastReceiver {
 	static int noOfTimes = 0;
 	
@@ -20,8 +22,14 @@ public class SampleBC extends BroadcastReceiver {
 	public void onReceive(final Context context, Intent intent) {
 		// TODO Auto-generated method stub
 		noOfTimes++;
-		Toast.makeText(context, "BC Service Running for " + noOfTimes + " times", Toast.LENGTH_SHORT).show();
-		AsyncHttpClient client = new AsyncHttpClient();
+        int alarmId = intent.getExtras().getInt("alarmId");
+        Intent intentt = new Intent(context, SampleBC.class);
+        final PendingIntent alarmIntent;
+        alarmIntent = PendingIntent.getBroadcast(context, alarmId, intentt, 0);
+
+        //cancelAlarm(alarmIntent);
+        Toast.makeText(context, "BC Service Running for " + noOfTimes + " times", Toast.LENGTH_SHORT).show();
+        AsyncHttpClient client = new AsyncHttpClient();
         RequestParams params = new RequestParams();
         // Checks if new records are inserted in Remote MySQL DB to proceed with Sync operation
         client.post("http://192.168.1.38:8080/mysqlsqlitesync/getdbrowcount.php",params ,new AsyncHttpResponseHandler() {
@@ -32,7 +40,7 @@ public class SampleBC extends BroadcastReceiver {
                 	// Create JSON object out of the response sent by getdbrowcount.php
                     JSONObject obj = new JSONObject(response);
                     System.out.println(obj.get("count"));
-                    // If the count value is not zero, call MyService to display notification 
+                    // If the count value is not zero, call MyService to display notification
                     if(obj.getInt("count") != 0){
                     	final Intent intnt = new Intent(context, MyService.class);
                     	// Set unsynced count in intent data
@@ -41,6 +49,8 @@ public class SampleBC extends BroadcastReceiver {
                     	context.startService(intnt);
                     }else{
                     	Toast.makeText(context, "Sync not needed", Toast.LENGTH_SHORT).show();
+                        AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
+                        alarmManager.cancel(alarmIntent);
                     }
                 } catch (JSONException e) {
                     // TODO Auto-generated catch block
@@ -61,5 +71,5 @@ public class SampleBC extends BroadcastReceiver {
                 }
             }
         });
-	}	
+    }
 }

@@ -3,4 +3,21 @@
     <color name="colorPrimary">#000</color>
     <color name="colorPrimaryDark">#000</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="temple_asian_lounge_color">#F1ECEC</color>
+    <color name="sushi_bar_color">#030303</color>
+    <color name="menu_name_overlay_1_color">#F48FB1</color>
+    <color name="rectangle_banner_color">#000000</color>
+    <color name="logo_color">#231F20</color>
+    <color name="rectangle_1_color">#A79090</color>
+    <color name="rectangle_3_copy_color">#313131</color>
+    <color name="nombre_del_producto_color">#424242</color>
+    <color name="descripcion_color">#757575</color>
+    <color name="precio_color">#212121</color>
+    <color name="rectangle_5_color">#FFF3E0</color>
+    <color name="agregar_color">#424242</color>
+    <color name="pescados_color">#030303</color>
+    <color name="especialidad_color">#030303</color>
+    <color name="nigiri_sushi_color">#030303</color>
+    <color name="aperitivos_color">#030303</color>
+
 </resources>
