@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MenuTemple.iml" filepath="$PROJECT_DIR$/MenuTemple.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Menu HansoBan.iml" filepath="$PROJECT_DIR$/Menu HansoBan.iml" />
       <module fileurl="file://$PROJECT_DIR$/android-async-http-1.4.4/android-async-http-1.4.4.iml" filepath="$PROJECT_DIR$/android-async-http-1.4.4/android-async-http-1.4.4.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swipeback-1.0.2-sources/swipeback-1.0.2-sources.iml" filepath="$PROJECT_DIR$/swipeback-1.0.2-sources/swipeback-1.0.2-sources.iml" />
     </modules>
   </component>
 </project>

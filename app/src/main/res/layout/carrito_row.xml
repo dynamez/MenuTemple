@@ -1,8 +1,8 @@
 <FrameLayout
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="#000"
-    android:alpha="0.65"
+    android:background="@color/temple_asian_lounge_color"
+
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <ScrollView
@@ -14,13 +14,13 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="123dp"
+            android:layout_height="130dp"
             android:orientation="vertical"
 
             >
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="120dp"
                 android:orientation="horizontal"
 
                 >
@@ -34,16 +34,16 @@
                     android:alpha="1"
                     android:clickable="true" />
                 <LinearLayout
-                    android:layout_width="400dp"
+                    android:layout_width="425dp"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     >
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="#FFF"
-                        android:textAppearance="?android:attr/textAppearanceMedium"
 
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/sushi_bar_color"
                         android:id="@+id/name_carrito"
                         android:textAlignment="center"
                         android:textSize="15dp"
@@ -51,8 +51,19 @@
                         android:alpha="1"/>
                     <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="40dp"
-                        android:textColor="#FFF"
+                        android:layout_height="wrap_content"
+
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/sushi_bar_color"
+                        android:id="@+id/koreano_carrito"
+                        android:textAlignment="center"
+                        android:textSize="15dp"
+                        android:textIsSelectable="false"
+                        android:alpha="1"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:textColor="@color/sushi_bar_color"
                         android:id="@+id/description_carrito"
                         android:alpha="1"
                         />
@@ -61,24 +72,26 @@
                         android:layout_width="94dp"
                         android:layout_height="39dp"
                         android:id="@+id/boton_carrito"
-                        android:src="@drawable/boton" />
+                        android:src="@drawable/boton3" />
                 </LinearLayout>
 
 
 
 
                 <Button
+
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:text="-"
-                    android:id="@+id/button"
+                    android:id="@+id/botonmas"
 
                     android:textColor="#FFF"/>
 
                 <EditText
-                    android:layout_width="35dp"
-                    android:layout_height="37dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_width="30dp"
+                    android:layout_height="27dp"
                     android:inputType="number"
                     android:ems="10"
                     android:background="#FFFF"
@@ -92,12 +105,12 @@
                     android:text="+"
                     android:textColor="#FFF"
 
-                    android:id="@+id/button2" />
+                    android:id="@+id/botonmenos" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/sushi_bar_color"
 
-                    android:textColor="#FFF"
                     android:textAppearance="?android:attr/textAppearanceLarge"
 
                     android:id="@+id/precio_carrito"

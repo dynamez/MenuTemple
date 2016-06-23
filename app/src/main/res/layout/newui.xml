@@ -1,5 +1,5 @@
 <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
-	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:layout_width="wrap_content" android:layout_height="wrap_content"
     android:background="#eeeeee">
 	<!-- 
 	/*
@@ -18,11 +18,11 @@
 	-->
 	<ScrollView android:id="@+id/newui"
 		android:layout_width="wrap_content" 
-		android:layout_height="match_parent" >
+		android:layout_height="wrap_content" >
 
 		<RelativeLayout android:id="@+id/content_container" 
 			android:layout_width="wrap_content" 
-			android:layout_height="match_parent" >
+			android:layout_height="wrap_content" >
 
 
 			<RelativeLayout android:id="@+id/artboard_1"
@@ -120,7 +120,7 @@
 						android:layout_height="220dp" />
 
 					<ImageView android:id="@+id/imageButton2"
-						android:src="@drawable/sushi"
+						android:src="@drawable/acomp"
 						android:contentDescription="@string/ek_img_content"
 						 android:layout_marginStart="550dp"
 						android:layout_marginTop="0dp"
@@ -135,20 +135,20 @@
 						android:fontFamily="Quicksand-Bold"
 						android:layout_gravity="center_horizontal|center"
 						android:gravity="center"
-						android:textSize="28sp"
+						android:textSize="23sp"
 						android:textColor="@color/sushi_bar_color"
 						android:layout_marginStart="540dp"
 						android:layout_marginTop="230dp"
 						android:layout_width="228dp"
 						android:layout_height="55dp"
-						android:text="@string/sushi_bar_string"
+						android:text="ACOMPAÑAMIENTOS"
 						 />
 
 					<TextView android:id="@+id/bar_"
 						android:fontFamily="Quicksand-Bold"
 						android:layout_gravity="center_horizontal|center"
 						android:gravity="center"
-						android:textSize="28sp"
+						android:textSize="23sp"
 						android:textColor="@color/sushi_bar_color"
 						android:layout_marginStart="540dp"
 						android:layout_marginTop="515dp"
@@ -161,39 +161,39 @@
 						android:fontFamily="Quicksand-Bold"
 						android:layout_gravity="center_horizontal|center"
 						android:gravity="center"
-						android:textSize="28sp"
+						android:textSize="23sp"
 						android:textColor="@color/sushi_bar_color"
 						android:layout_marginStart="285dp"
 						android:layout_marginTop="515dp"
 						android:layout_width="228dp"
 						android:layout_height="55dp"
-						android:text="@string/postres__string"
+						android:text="SOPAS Y FIDEOS"
 						 />
 
 					<TextView android:id="@+id/especialidad"
 						android:fontFamily="Quicksand-Bold"
 						android:layout_gravity="center_horizontal|center"
 						android:gravity="center"
-						android:textSize="28sp"
+						android:textSize="23sp"
 						android:textColor="@color/sushi_bar_color"
 						android:layout_marginStart="10dp"
-						android:layout_marginTop="515dp"
 						android:layout_width="270dp"
 						android:layout_height="55dp"
-						android:text="@string/especialidad_string"
-						 />
+						android:text="CARNES Y MARISCOS"
+						android:layout_alignTop="@+id/postres_"
+						android:layout_alignParentBottom="true" />
 
 					<TextView android:id="@+id/izakaya"
 						android:fontFamily="Quicksand-Bold"
 						android:layout_gravity="center_horizontal|center"
 						android:gravity="center"
-						android:textSize="28sp"
+						android:textSize="23sp"
 						android:textColor="@color/sushi_bar_color"
 						android:layout_marginStart="285dp"
 						android:layout_marginTop="230dp"
 						android:layout_width="228dp"
 						android:layout_height="55dp"
-						android:text="@string/izakaya_string"
+						android:text="PARA 2 Y TEMPORADA"
 						 />
 
 					<TextView android:id="@+id/appetizer"
@@ -206,7 +206,7 @@
 						android:layout_marginTop="230dp"
 						android:layout_width="228dp"
 						android:layout_height="55dp"
-						android:text="@string/appetizer_string"
+						android:text="ALMUERZOS"
 						 />
 
 					<ImageView android:id="@+id/appetizer_circle"
@@ -218,7 +218,7 @@
 						android:layout_height="220dp" />
 
 					<ImageView android:id="@+id/imageButton"
-						android:src="@drawable/appetizer"
+						android:src="@drawable/arroces"
 						android:contentDescription="@string/ek_img_content"
 						 android:layout_marginStart="25dp"
 						android:layout_marginTop="0dp"
@@ -278,7 +278,7 @@
 						android:layout_height="220dp" />
 
 					<ImageView android:id="@+id/imageButton5"
-						android:src="@drawable/postres"
+						android:src="@drawable/fideos"
 						android:contentDescription="@string/ek_img_content"
 						 android:layout_marginStart="287dp"
 						android:layout_marginTop="287dp"
@@ -298,7 +298,7 @@
 						android:layout_height="220dp" />
 
 					<ImageView android:id="@+id/imageButton4"
-						android:src="@drawable/ramen2"
+						android:src="@drawable/carnes"
 
 						android:contentDescription="@string/ek_img_content"
 						 android:layout_marginStart="25dp"
@@ -363,41 +363,7 @@
 						android:text="@string/menu_string"
 						 />
 
-					<TextView android:id="@+id/piso_2_hotel_intercontinental"
-						android:fontFamily="Quicksand-Regular"
-						android:layout_gravity="center_horizontal|center"
-						android:gravity="center"
-						android:textColor="@color/sushi_bar_color"
-						android:layout_marginStart="140dp"
-						android:layout_marginTop="105dp"
-						android:layout_width="536dp"
-						android:layout_height="26dp"
-						android:text="@string/piso_2_hotel_intercontinental_string"
-						 />
 
-					<TextView android:id="@+id/santiago_de_chile"
-						android:fontFamily="Quicksand-Regular"
-						android:layout_gravity="center_horizontal|center"
-						android:gravity="center"
-						android:textColor="@color/sushi_bar_color"
-						android:layout_marginStart="140dp"
-						android:layout_marginTop="125dp"
-						android:layout_width="536dp"
-						android:layout_height="26dp"
-						android:text="@string/santiago_de_chile_string"
-						 />
-
-					<TextView android:id="@+id/av__vitacura_2885__las_condes_"
-						android:fontFamily="Quicksand-Regular"
-						android:layout_gravity="center_horizontal|center"
-						android:gravity="center"
-						android:textColor="@color/sushi_bar_color"
-						android:layout_marginStart="140dp"
-						android:layout_marginTop="85dp"
-						android:layout_width="536dp"
-						android:layout_height="26dp"
-						android:text="@string/av__vitacura_2885__las_condes__string"
-						 />
 
 				</RelativeLayout>
 
@@ -410,7 +376,7 @@
 					>
 
 					<ImageView android:id="@+id/top_banner"
-						android:src="@drawable/top_banner"
+						android:src="@drawable/imagenbanner"
 						android:contentDescription="@string/ek_img_content"
 						 android:layout_marginStart="0dp"
 						android:layout_marginTop="0dp"
@@ -448,7 +414,7 @@
 						android:layout_height="250dp" />
 
 					<ImageView android:id="@+id/_group_"
-						android:src="@drawable/logo"
+						android:src="@drawable/logocentral"
 						android:contentDescription="@string/ek_img_content"
 						 android:layout_marginStart="287dp"
 						android:layout_marginTop="151dp"

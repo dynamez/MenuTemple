@@ -1,4 +1,4 @@
-<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent" android:layout_height="wrap_content" >
 	<!-- 
 	/*
@@ -15,7 +15,7 @@
 	 *
 	 */
 	-->
-	<ScrollView android:id="@+id/appetizers" 
+	<RelativeLayout android:id="@+id/appetizers"
 		android:layout_width="wrap_content"
 		android:layout_height="match_parent" >
 
@@ -220,7 +220,7 @@
 					>
 
 					<ImageView android:id="@+id/top_banner"
-						android:src="@drawable/top_banner"
+						android:src="@drawable/imagenbanner"
 						android:contentDescription="@string/ek_img_content"
 						 android:layout_marginStart="0dp"
 						android:layout_marginTop="0dp"
@@ -242,7 +242,7 @@
 						android:layout_height="250dp" />
 
 					<ImageView android:id="@+id/_group_"
-						android:src="@drawable/logo"
+						android:src="@drawable/logocentral"
 						android:contentDescription="@string/ek_img_content"
 						 android:layout_marginStart="287dp"
 						android:layout_marginTop="151dp"
@@ -255,5 +255,5 @@
 
 
 
-	</ScrollView>
-</HorizontalScrollView>
+	</RelativeLayout>
+</RelativeLayout>

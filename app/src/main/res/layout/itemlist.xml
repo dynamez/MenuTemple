@@ -117,8 +117,8 @@
                 android:layout_height="wrap_content"
                 >
                 <ImageView
-                    android:layout_width="64dp"
-                    android:layout_height="18dp"
+                    android:layout_width="80dp"
+                    android:layout_height="35dp"
                     android:id="@+id/boton1"
                     android:src="@drawable/boton2"/>
                 <!--<View android:id="@+id/rectangle_5"-->
@@ -156,11 +156,23 @@
                     android:gravity="center"
                     android:textSize="18sp"
                     android:textColor="@color/nombre_del_producto_color"
-                    android:layout_marginStart="86dp"
-                    android:layout_marginTop="0dp"
+                    android:layout_marginStart="56dp"
+                    android:layout_marginTop="-7dp"
                     android:layout_width="220dp"
-                    android:layout_height="20dp"
+                    android:layout_height="30dp"
                     android:text="@string/nombre_del_producto_string"
+                    />
+                <TextView android:id="@+id/koreano"
+                    android:fontFamily="Quicksand-Bold"
+                    android:layout_gravity="center_horizontal|center"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textColor="@color/nombre_del_producto_color"
+                    android:layout_marginStart="260dp"
+                    android:layout_marginTop="-7dp"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:text="Koreano"
                     />
 
                 <TextView android:id="@+id/description"

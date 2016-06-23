@@ -292,7 +292,7 @@
 
 
 			<RelativeLayout android:id="@+id/texto_bottom"
-				android:layout_marginTop="1090dp"
+				android:layout_marginTop="1040dp"
 				android:layout_marginStart="0dp"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
@@ -357,7 +357,7 @@
 					>
 
 					<ImageView android:id="@+id/top_banner"
-						android:src="@drawable/top_banner"
+						android:src="@drawable/imagenbanner"
 						android:contentDescription="@string/ek_img_content"
 						 android:layout_marginStart="0dp"
 						android:layout_marginTop="0dp"
@@ -395,7 +395,7 @@
 						android:layout_height="250dp" />
 
 					<ImageView android:id="@+id/_group_"
-						android:src="@drawable/logo"
+						android:src="@drawable/logocentral"
 						android:contentDescription="@string/ek_img_content"
 						 android:layout_marginStart="287dp"
 						android:layout_marginTop="151dp"

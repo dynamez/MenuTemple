@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Temple Asian Lounge</string>
+    <string name="app_name">HansoBan</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_categoria">CategoriaActivity</string>
 
@@ -39,4 +39,5 @@
     <string name="cocktel_string">COCKTEL</string>
     <string name="vinos_string">VINOS</string>
     <string name="jugos_string">JUGOS Y BEBIDAS \CAFETERIA</string>
+    <string name="title_activity_popup">PopupActivity</string>
 </resources>
