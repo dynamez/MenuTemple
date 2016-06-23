@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.dynam.menuhansoban">
+    package="com.example.dynam.menutemple">
 
     <uses-sdk
         android:minSdkVersion="8"
@@ -69,12 +69,15 @@
         </activity>
         <activity
             android:name=".PopupActivity"
-            android:label="Detalle del Producto"
-            android:theme="@style/Theme.AppCompat.Dialog"></activity>
+            android:label="Detalle"
+            android:theme="@style/Theme.AppCompat.Dialog" />
         <activity
             android:name=".CarritoActivity"
             android:label="Carro de Compras"
             android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity android:name=".VideoTempleActivity"
+            android:label="Temple Asian Lounge"
+            android:theme="@style/Theme.AppCompat.Dialog" ></activity>
     </application>
 
 </manifest>
